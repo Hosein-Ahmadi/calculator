@@ -1,0 +1,86 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    color: #fff;
+    background-color: hsl(0, 0%, 30%);
+    cursor: pointer;
+    transition: all 100ms;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    -ms-transition: all 100ms;
+    -o-transition: all 100ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+button:hover{
+    background-color: hsl(0, 0%, 35%);
+}
+.container{
+    max-width: 500px;
+    background-color: hsl(0, 0%, 15%);
+    padding: 2rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+#displayVal{
+    margin-bottom: 2.5rem;
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+    background-color: hsl(0, 0%, 30%);
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+
+}
+.btnContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.operator{
+    background-color: hsl(35, 93%, 50%);
+}
+.operator:hover{
+    background-color: hsl(35, 93%, 60%);
+}
+
+@media screen and (max-width:680px) {
+    html{
+        font-size: 60%;
+    }
+}
